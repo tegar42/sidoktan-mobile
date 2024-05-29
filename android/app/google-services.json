@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "958782462924",
+    "project_id": "sidoktan-48bfd",
+    "storage_bucket": "sidoktan-48bfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958782462924:android:2cf4c5428659b911501b69",
+        "android_client_info": {
+          "package_name": "com.example.sidoktan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaGSqviAWBvRubTEJ9heYZa4UQ2trjVdk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958782462924:android:ab5b7758b31f9457501b69",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaGSqviAWBvRubTEJ9heYZa4UQ2trjVdk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
