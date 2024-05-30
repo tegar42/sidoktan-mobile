@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:sidoktan/pages/chatbot_page.dart';
 import 'package:sidoktan/pages/components/bottom_navbar.dart';
+import 'package:sidoktan/pages/scan_menu.dart';
 import 'package:sidoktan/pages/settings_page.dart';
 import 'package:sidoktan/pages/home.dart';
 
@@ -44,7 +45,10 @@ class _HomePageState extends State<HomePage> {
         height: 60, // Adjust the height
         child: FloatingActionButton(
           onPressed: () {
-            // Define your action here
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const ScanMenuPage()),
+            );
           },
           backgroundColor: const Color(0xFF5B5CDB),
           shape: RoundedRectangleBorder(

@@ -67,6 +67,9 @@ flutter:
     - assets/img/logo-temp2.png
     - assets/img/sidoktan-logo.png
     - assets/img/kattan.png
+    - assets/img/tomato.png
+    - assets/img/chilis.png
+    - assets/img/leaf.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

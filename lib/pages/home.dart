@@ -47,18 +47,23 @@ class HomeContentPage extends StatelessWidget {
             Padding(
               padding:
                   const EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
-              child: TextField(
-                controller: searchController,
-                decoration: InputDecoration(
-                  hintText: 'Search...',
-                  prefixIcon: const Icon(Icons.search),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8.0),
+              child: SizedBox(
+                height: 40, // Set the desired height here
+                child: TextField(
+                  controller: searchController,
+                  decoration: InputDecoration(
+                    hintText: 'Search...',
+                    prefixIcon: const Icon(Icons.search),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    filled: true,
+                    fillColor: Colors.white,
                   ),
+                  onSubmitted: (String value) {
+                    // Handle search logic here
+                  },
                 ),
-                onSubmitted: (String value) {
-                  // Handle search logic here
-                },
               ),
             ),
             Padding(
@@ -97,6 +102,8 @@ class HomeContentPage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                             ),
+                            style: TextStyle(
+                                fontSize: 14), // Change text size to 14
                           ),
                         ),
                       ],
@@ -131,8 +138,16 @@ class HomeContentPage extends StatelessWidget {
                             ),
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 20.0, vertical: 10.0),
+                            // Change the background color here
+                            backgroundColor: Color(
+                                0xFF5B5CDB), // Example: Change to blue color
                           ),
-                          child: const Text('Send'),
+                          child: Text(
+                            'Send',
+                            style: TextStyle(
+                                color:
+                                    Colors.white), // Change text color to white
+                          ),
                         ),
                       ],
                     ),
@@ -140,12 +155,12 @@ class HomeContentPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height - 250,
-              child: const Center(
-                child: Text('Home Content'),
-              ),
-            ),
+            // SizedBox(
+            //   height: MediaQuery.of(context).size.height - 250,
+            //   child: const Center(
+            //     child: Text('Home Content'),
+            //   ),
+            // ),
           ],
         ),
       ),
